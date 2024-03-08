@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  dev:
+    build: .
+    container_name: react-evaluation-paolochmprojects
+    volumes:
+      - ..:/home/node
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    ports:
+      - "5173:5173"
